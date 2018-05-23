@@ -3,6 +3,8 @@ import Count from './components/count'
 import SearchResults from './components/search-results'
 import BinaryForm from './components/binary-form'
 import LinearForm from './components/linear-form'
+import './App.css';
+
 
 
 class App extends Component {

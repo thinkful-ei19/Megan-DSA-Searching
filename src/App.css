@@ -1,0 +1,13 @@
+div.App {
+    margin: 0 auto;
+    max-width:50em;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    padding: 1em 1em;
+  }  
+  
+  
+  h2 {
+    margin-top: 1em;
+  }
