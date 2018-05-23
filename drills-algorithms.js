@@ -220,4 +220,30 @@ function postOrder(tree){
   }
   console.log(tree.key);
 }
-postOrder(main());
+// postOrder(main());
+
+
+function maxProfit(arr){
+  let index=0;
+  let lowest=arr[0];
+
+  for(let i=0; i<arr.length; i++){
+    if(arr[i]<lowest){
+      lowest= arr[i];
+      index=i;
+    }
+  }
+  
+  let highest=arr[index];
+
+  for(let j=index; j<arr.length; j++){
+    if(highest<arr[j]){
+      highest=arr[j];
+    }
+  }
+  return highest-lowest;
+
+}
+const arr=[128, 97, 121, 123, 98, 97, 105];
+
+console.log(maxProfit(arr));
